@@ -2,9 +2,9 @@ import React from "react";
 
 const Footer = () => {
   const socialIcons = [
-    { src: "linkedin.png", alt: "LinkedIn", link: "" },
-    { src: "outlook.png", alt: "Outlook", link: "" },
-    { src: "github.png", alt: "Twitter", link: "" },
+    { src: "linkedin.png", alt: "LinkedIn", link: "https://linkedin.com" },
+    { src: "outlook.png", alt: "Outlook", link: "mailto:pallavisharma1@shooliniuniversity.com" },
+    { src: "github.png", alt: "Twitter", link: "https://github.com/pallavi1308" },
   
   ];
 
