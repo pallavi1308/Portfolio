@@ -109,8 +109,8 @@ export const SkillsInfo = [
         "Fully responsive layout for all screen sizes.Auto section detection on scroll,Interactive Projects Section with filtering by tags. Project Modal with detailed project descriptions and image previews.Skills Section have search bar filter to filter specific skills. Certifications Section with detailed certificates and clickable links. Downloadable Resume option.Animated components using Framer Motion for a dynamic user experience.",
       image: portfolio,
       tags: ["React JS", "CSS", "HTML", "Framer Motion", "JavaScript","Tailwind CSS","React Icons","React Parallax Tilt"],
-      github: "",
-      webapp: "",
+      github: "https://github.com/pallavi1308/Portfolio",
+      webapp: "https://portfolio-three-beige-6yyui3fy68.vercel.app/",
     },
     {
       id: 3,
