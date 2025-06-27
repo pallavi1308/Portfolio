@@ -1,0 +1,422 @@
+/* Smooth Theme Transition */
+body, .navbar, .mobile-menu, .mobile-menu-backdrop {
+  transition: background-color 0.5s ease, color 0.5s ease;
+
+}
+body {
+  background-color: white;
+}
+/* Navbar Styles */
+.navbar {
+    position: fixed;
+    margin-right: 1000px;
+    top: 0;
+    width: 100%;
+    z-index: 50;
+    padding: 1.25rem 7vw;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar-scrolled {
+    background-color: rgba(255, 255, 255, 0); /* Low opacity for transparency */
+    backdrop-filter: blur(10px);                /* Blur effect */
+    -webkit-backdrop-filter: blur(10px);        /* Safari support */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);   /* Optional soft shadow */
+    border-bottom: 1px solid rgba(255, 255, 255, 0); }
+  
+  .navbar-container {
+    display: flex;
+    margin-left: 100px;
+     justify-content: center;
+    align-items: center;
+  }
+  
+  .navbar-logo p{
+    font-size: 30px;
+    font-weight: semi-bold;
+    cursor: pointer;
+    font-family: Brush Script MT, Brush Script Std, cursive; 
+    color:white;
+    margin-right: 300px;
+  }
+  
+  .navbar-menu {
+    display: flex;
+    gap: 3rem;
+    font-weight: bold;
+    margin-right: 400px;
+    /* color: #d1d5db; Tailwind's gray-300 */
+   color: white;
+  }
+  
+  /* Underline effect for navbar items */
+.navbar-item button {
+  position: relative;
+  background: none;
+  border: none;
+  color: inherit;
+  font-size: 1rem;
+  cursor: pointer;
+  padding-bottom: 4px; /* Gives space for the underline */
+}
+
+.navbar-item button::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #6AB0E3;
+  transition: width 0.3s ease;
+}
+
+.navbar-item button:hover::after,
+.navbar-item.active button::after {
+  width: 100%;
+}
+
+  
+  /* Mobile Menu Icon */
+  .mobile-menu-icon {
+    display: none;
+  }
+  
+  .menu-icon {
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Mobile Menu */
+  
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 70%;
+    max-width: 300px;
+    background-color: rgba(5, 4, 20, 0.95);
+    backdrop-filter: blur(8px);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    z-index: 50;
+    padding-top: 4rem;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.2);
+  }
+  .mobile-menu-backdrop {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+    z-index: 40;
+  }
+  .mobile-menu-items {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 1rem;
+    padding: 1rem 2rem;
+    color: #d1d5db;
+  }
+  
+  .mobile-menu-item button {
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: inherit;
+    font-size: 1rem;
+    color: #d1d5db;
+  }
+  
+  .mobile-menu-item:hover button {
+    color: black;
+  }
+  
+  .mobile-menu-item.active button {
+    /* color: #8245ec; */
+    color: #6AB0E3;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .navbar-container {
+      justify-content: space-between;
+    }
+    .navbar-logo{
+        justify-content: center;
+        margin-left: 70px;
+    }
+    .navbar-menu {
+      display: none;
+    }
+  
+    .mobile-menu-icon {
+        
+      display: block;
+     
+    }
+  }
+
+
+  /* About  */
+  /* .about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 200px 60px;
+    min-height: 100vh;
+    background-color: var(--section-background, #050414);
+  }
+  
+  .about-container {
+    max-width: 800px;
+    text-align: right;
+  }
+  
+  .about-heading {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--text-color, white);
+  }
+  
+  .about-description {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--text-color, white);
+  }
+  
+  .resume-button {
+    padding: 10px 20px;
+    align-items: center;
+    margin-right: 300px;
+    background-color: #6AB0E3;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s, background-color 0.3s;
+  }
+  .resume-button:hover {
+    background-color: transparent;
+    color: #9dd0f5;
+    transform: scale(1.05);
+    border:#9dd0f5;
+  }
+   */
+
+   /* About */
+.about-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 200px 60px; 
+  min-height: 100vh;
+  background-color: var(--section-background, #ffffff); /* Change to white background */
+}
+
+.about-container {
+  max-width: 800px;
+  text-align: right;
+}
+
+.about-heading {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333333; /* Dark text for light background */
+}
+
+.about-description {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #555555; /* Slightly lighter dark text */
+}
+.resume-button {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  margin-right: 300px;
+  background-color: #6AB0E3;
+  color: white;
+  border: 2px solid #6AB0E3;
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: bold;
+  overflow: hidden; /* Required for sliding effect */
+  transition: color 0.3s, transform 0.3s;
+}
+
+
+/* Responsive: Center the button on mobile */
+@media (max-width: 768px) {
+  .resume-button {
+    margin: 0 auto; /* Center the button horizontally */
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
+  .back-to-top {
+    position: fixed;
+    bottom: 3rem; /* Puts it above the footer */
+    right: 2rem;
+    background-color:  #6AB0E3;
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    z-index: 100;
+  }
+  
+  .back-to-top:hover {
+    background-color:  #6AB0E3;
+    transform: scale(1.1);
+  }
+  
+  .back-to-top svg {
+    font-size: 1.5rem;
+  }
+  /* Light mode styles when 'dark-mode' class is added to body */
+body.dark-mode {
+  background-color: #f4f4f4;
+  color: #050414;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Navbar in light mode */
+body.dark-mode nav {
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+}
+
+body.dark-mode nav ul li button {
+  color: #050414;
+}
+
+body.dark-mode .back-to-top {
+  background-color: #050414;
+  color: white;
+}
+
+body.dark-mode .back-to-top:hover {
+  background-color: #333;
+}
+
+/* Optional: adjust hover colors or active link colors for light mode */
+.filter-white {
+  filter: brightness(0) invert(1);
+}
+.fab {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #8245ec;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease;
+}
+
+.fab:hover {
+  background-color: #a855f7;
+}
+
+@media (min-width: 768px) {
+  .fab {
+    display: none;
+  }
+}
+
+/* Certification Section Styling */
+/* Certification Section Styling */
+.cert-section {
+  padding: 4rem 7vw;
+  background: transparent;
+}
+
+.cert-title {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: white;
+  font-family: 'Brush Script MT', 'Brush Script Std', cursive;
+}
+
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.cert-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(130, 69, 236, 0.5);
+  border-radius: 12px;
+  padding: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(8px);
+  color: white;
+}
+
+.cert-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(130, 69, 236, 0.3);
+}
+
+.cert-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.cert-issuer {
+  display: block;
+  font-size: 1rem;
+  color: #a855f7;
+  margin-bottom: 0.25rem;
+}
+
+.cert-date {
+  display: block;
+  font-size: 0.9rem;
+  color: #d1d5db;
+  margin-bottom: 1rem;
+}
+
+.cert-description {
+  font-size: 0.95rem;
+  color: #d1d5db;
+  margin-bottom: 1.5rem;
+}
+
+.cert-link {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(90deg, #8245ec, #a855f7);
+  border-radius: 9999px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.cert-link:hover {
+  background: linear-gradient(90deg, #a855f7, #8245ec);
+}
