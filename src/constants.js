@@ -129,8 +129,8 @@ export const SkillsInfo = [
         "Developed an NLP-based chatbot that provides accurate, context-aware responses using a structured knowledge base. Implemented in Python with libraries like NLTK and regular expressions for natural language understanding and pattern matching. Focused on text processing, conversational logic, and knowledge-based query handling.",
       image: chatbot,
       tags: ["NLP", "Python", "CSS"],
-      github: "",
-      webapp: "",
+      github: "https://github.com/pallavi1308/Portfolio",
+      webapp: "https://portfolio-three-beige-6yyui3fy68.vercel.app/",
     },
     {
       id: 5,
