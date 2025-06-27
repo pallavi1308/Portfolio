@@ -12,7 +12,7 @@ const About = () => {
           I am a student with hands-on experience in Python and React.js web development projects. Skilled in both front-end and back-end technologies, I also have a strong interest and specialization in Artificial Intelligence and Machine Learning. I am eager to apply my skills to real-world projects and continue growing as a developer.
           </p>
           <a
-            href="My Resume.pdf" 
+            href="" 
             download
             className="resume-button"
           >
