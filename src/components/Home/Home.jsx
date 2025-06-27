@@ -61,7 +61,7 @@ const About = () => {
               initial={{ y: 50, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 1, delay: 1.3 }}
-              href=""
+              href="mailto:pallavisharma1@shooliniuniversity.com"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block text-white py-3 px-8 rounded-full mt-5 text-lg font-bold transition duration-300 transform hover:scale-105"
